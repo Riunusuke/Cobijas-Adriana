@@ -11,12 +11,18 @@ h1 {
   margin: 0;
   padding: 22px 15px;
 }
+h3 {
+  color: #393930;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 24px;
+}
 figure {
   margin: 0;
 }
 .header {
   display: grid;
-  background: royalblue;
+  background: rgb(80,163,249);
   height: 79px;
   align-content: center;
   width: 100%;
@@ -76,4 +82,44 @@ figure {
 }
 .hero-text h2{
   justify-self: center;
+}
+.categories {
+  padding: 20px;
+}
+.categories .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.categories-section {
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.categories img {
+  height: 200px;
+  width: 480px;
+  object-fit: cover;
+}
+.categories-section-title {
+  border-radius: 10px;
+  margin: 20px 40px;
+  background-color: white;
+  margin-top: -40px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.cubrelechos-link {
+  text-decoration: none;
+  color: black;
+}
+.cobijas-link {
+  text-decoration: none;
+  color: black;
+}
+.sabanas-link {
+  text-decoration: none;
+  color: black;
 }
