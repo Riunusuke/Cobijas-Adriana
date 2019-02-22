@@ -1,13 +1,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
 }
 h1 {
   color: white;
   text-transform: uppercase;
   margin: 0;
-  padding: 30px 15px;
+  padding: 22px 15px;
+}
+figure {
+  margin: 0;
 }
 .header {
   display: grid;
@@ -16,9 +21,10 @@ h1 {
   align-content: center;
   width: 100%;
 }
-.container {
+.header .container {
   display: grid;
   grid-template-columns: 1fr 475px;
+  grid-template-rows: 79px;
 }
 .header .menu {
   display: grid;
@@ -43,11 +49,31 @@ h1 {
   align-self: center;
 }
 .link1{
-  padding: 30px 40px;
+  padding: 25px 40px;
 }
 .link2{
-  padding: 30px 22px;
+  padding: 25px 22px;
 }
 .link3 {
-  padding: 30px 20px;
+  padding: 25px 20px;
+}
+.hero .container {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 740px;
+  grid-template-rows: 400px;
+  justify-items: center;
+  justify-content: center;
+  background: #C5DAE8;
+}
+.hero-text{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); 
+  color: #393930;
+  font-size: 75px;
+  text-transform: uppercase;
+  justify-self: center;
+}
+.hero-text h2{
+  justify-self: center;
 }
