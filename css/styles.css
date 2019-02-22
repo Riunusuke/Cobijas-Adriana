@@ -60,7 +60,7 @@ figure {
 .hero .container {
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 740px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px;
   justify-items: center;
   justify-content: center;
