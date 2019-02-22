@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+h1 {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 30px 15px;
+}
+.header {
+  display: grid;
+  background: royalblue;
+  height: 79px;
+  align-content: center;
+  width: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 475px;
+}
+.header .menu {
+  display: grid;
+}
+.header ol
+{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.header ol li
+{
+  display: grid;
+}
+.header a
+{
+  color: white;
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+}
+.link1{
+  padding: 30px 40px;
+}
+.link2{
+  padding: 30px 22px;
+}
+.link3 {
+  padding: 30px 20px;
+}
