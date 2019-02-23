@@ -83,6 +83,7 @@ figure {
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: 1600px;
+  background-attachment: fixed;
   height: 700px;
 }
 .hero-text{
