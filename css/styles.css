@@ -63,22 +63,31 @@ figure {
 .link3 {
   padding: 25px 20px;
 }
+.hero {
+  background: #C5DAE8;
+}
 .hero .container {
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 400px;
   justify-items: center;
   justify-content: center;
-  background: #C5DAE8;
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  height: 700px;
 }
 .hero-text{
   display: grid;
   grid-template-rows: repeat(3, 1fr); 
   color: #393930;
-  font-size: 75px;
+  font-size: 135px;
   text-transform: uppercase;
   justify-self: center;
+}
+.hero img {
+  height: 800px;
 }
 .hero-text h2{
   justify-self: center;
@@ -98,7 +107,7 @@ figure {
   background: #f4fbff;
 }
 .categories img {
-  height: 200px;
+  height: 400px;
   width: 480px;
   object-fit: cover;
 }
@@ -122,4 +131,103 @@ figure {
 .sabanas-link {
   text-decoration: none;
   color: black;
+}
+.recommended {
+  padding: 20px;
+  background: #C5DAE8;
+}
+.recommended .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 430px);
+  grid-template-areas:  "cubrelecho-doble cubrelecho-doble sabana-sencilla cobija-termica-doble"
+                        "cubrelecho-sencillo cubrelecho-sencillo sabana-doble sabana-doble";    
+}
+.cubrelecho-doble {
+  grid-area: cubrelecho-doble;
+}
+.sabana-sencilla {
+  grid-area: sabana-sencilla;
+}
+.sabana-doble {
+  grid-area: sabana-doble;
+}
+.cobija-termica-doble {
+  grid-area: cobija-termica-doble;
+}
+.cubrelecho-sencillo {
+  grid-area: cubrelecho-sencillo;
+}
+.recommended .container article {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.recommended img {
+  object-fit: cover;
+}
+.product-image {
+  height: 380px;
+  width: 752px;
+}
+.recommended h4 {
+  border-radius: 10px;
+  margin: 20px 40px;
+  background-color: white;
+  margin-top: -40px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.contact {
+  color: white;
+  background: #50A3F9;
+  height: 170px;
+  display: grid;
+  align-items: center;
+}
+.form_email{
+  display: grid;
+  grid-template-columns: 400px 218px 100px;
+  grid-template-rows: 50px;
+  grid-gap: 30px;
+}
+.contact .container h3 {
+  color: white;
+}
+.form_email input {
+  border-color:black;
+  padding: 10px 20px 10px 25px;
+  border-radius: 5px;
+  border-style: solid;
+  background-image: url('../images/sobre-cerrado.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form_email button{
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+}
+.form_email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  align-self: center;
+  justify-self: center;
+}
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: grid;
+  justify-content: end;
+}
+.footer strong a {
+  color: white;
+  text-decoration: none;
 }
