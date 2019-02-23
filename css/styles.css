@@ -1,15 +1,17 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
   margin: 0;
 }
 h1 {
+  font-weight: 100;
+  font-family: "Pacifico", sans-serif;
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: 0;
-  padding: 22px 15px;
+  padding: 10px 15px;
 }
 h3 {
   color: #393930;
@@ -29,7 +31,7 @@ figure {
 }
 .header .container {
   display: grid;
-  grid-template-columns: 1fr 475px;
+  grid-template-columns: 1fr 700px;
   grid-template-rows: 79px;
 }
 .header .menu {
@@ -37,11 +39,14 @@ figure {
 }
 .header ol
 {
+  font-size: 25px;
+  font-family: "Pacifico", sans-serif;
   display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 79px;
 }
 .header ol li
 {
@@ -55,13 +60,13 @@ figure {
   align-self: center;
 }
 .link1{
-  padding: 25px 40px;
+  padding: 18px 60px;
 }
 .link2{
-  padding: 25px 22px;
+  padding: 18px 40px;
 }
 .link3 {
-  padding: 25px 20px;
+  padding: 18px 25px;
 }
 .hero {
   background: #C5DAE8;
@@ -79,11 +84,13 @@ figure {
   height: 700px;
 }
 .hero-text{
-  display: grid;
-  grid-template-rows: repeat(3, 1fr); 
-  color: #393930;
-  font-size: 135px;
+  line-height: 1.5;
+  letter-spacing: 5px;
   text-transform: uppercase;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); 
+  color: #393930;
+  font-size: 145px;
   justify-self: center;
 }
 .hero img {
@@ -94,6 +101,7 @@ figure {
 }
 .categories {
   padding: 20px;
+  height: 725px;
 }
 .categories .container{
   display: grid;
@@ -104,14 +112,16 @@ figure {
   width: 480px;
   border-radius: 10px;
   overflow: hidden;
-  background: #f4fbff;
+  background: #C5DAE8;
+  border: 5px solid #C5DAE8;
 }
 .categories img {
-  height: 400px;
+  height: 550px;
   width: 480px;
   object-fit: cover;
 }
 .categories-section-title {
+  font-size: 30px;
   border-radius: 10px;
   margin: 20px 40px;
   background-color: white;
@@ -135,11 +145,12 @@ figure {
 .recommended {
   padding: 20px;
   background: #C5DAE8;
+  height: 760px;
 }
 .recommended .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 430px);
+  grid-template-rows: repeat(2, 330px);
   grid-template-areas:  "cubrelecho-doble cubrelecho-doble sabana-sencilla cobija-termica-doble"
                         "cubrelecho-sencillo cubrelecho-sencillo sabana-doble sabana-doble";    
 }
@@ -168,7 +179,7 @@ figure {
   object-fit: cover;
 }
 .product-image {
-  height: 380px;
+  height: 270px;
   width: 752px;
 }
 .recommended h4 {
