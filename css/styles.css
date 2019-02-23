@@ -39,8 +39,10 @@ figure {
 }
 .header ol
 {
-  font-size: 25px;
-  font-family: "Pacifico", sans-serif;
+  font-size: 18px;
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 2;
+  letter-spacing: 2px;
   display: grid;
   margin: 0;
   padding: 0;
@@ -152,7 +154,7 @@ figure {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 330px);
   grid-template-areas:  "cubrelecho-doble cubrelecho-doble sabana-sencilla cobija-termica-doble"
-                        "cubrelecho-sencillo cubrelecho-sencillo sabana-doble sabana-doble";    
+                        "cubrelecho-doble cubrelecho-doble cubrelecho-sencillo sabana-doble";    
 }
 .cubrelecho-doble {
   grid-area: cubrelecho-doble;
@@ -180,6 +182,10 @@ figure {
 }
 .product-image {
   height: 270px;
+  width: 752px;
+}
+.product-image1 {
+  height: 600px;
   width: 752px;
 }
 .recommended h4 {
@@ -233,6 +239,7 @@ figure {
   justify-self: center;
 }
 .footer {
+  letter-spacing: 1px;
   background-color: #1b2127;
   color: white;
   display: grid;
