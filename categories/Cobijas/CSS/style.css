@@ -1,0 +1,125 @@
+body {
+  font-family: 'Fjalla One', sans-serif;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+h1 {
+  font-weight: 100;
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 10px 15px;
+}
+h3 {
+  color: #393930;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 24px;
+}
+figure {
+  margin: 0;
+}
+.header {
+  display: grid;
+  background: rgb(80,163,249);
+  height: 79px;
+  align-content: center;
+  width: 100%;
+}
+.header .container {
+  display: grid;
+  grid-template-columns: 1fr 700px;
+  grid-template-rows: 79px;
+}
+.header .menu {
+  display: grid;
+}
+.header ol
+{
+  font-size: 18px;
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 2;
+  letter-spacing: 2px;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 79px;
+}
+.header ol li
+{
+  display: grid;
+}
+.header a
+{
+  color: white;
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+}
+.link1{
+  padding: 18px 60px;
+}
+.link2{
+  padding: 18px 40px;
+}
+.link3 {
+  padding: 18px 25px;
+}
+.recommended {
+  padding: 20px;
+  background: #C5DAE8;
+  height: 760px;
+}
+.recommended .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 330px);
+  grid-template-areas:  "product1 product1 product2 product4"
+                        "product1 product1 product5 product3";    
+}
+.product1 {
+  grid-area: product1;
+}
+.product2 {
+  grid-area: product2;
+}
+.product3 {
+  grid-area: product3;
+}
+.product4 {
+  grid-area: product4;
+}
+.product5 {
+  grid-area: product5;
+}
+.recommended .container article {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.recommended img {
+  object-fit: cover;
+}
+.product-image {
+  height: 270px;
+  width: 752px;
+}
+.product-image1 {
+  height: 600px;
+  width: 752px;
+}
+.recommended h4 {
+  border-radius: 10px;
+  margin: 20px 40px;
+  background-color: white;
+  margin-top: -40px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
