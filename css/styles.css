@@ -250,3 +250,56 @@ figure {
   color: white;
   text-decoration: none;
 }
+
+@media screen and (max-width: 1024px) {
+  body {
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: auto;
+  }
+  .header .menu {
+    grid-area: menu;
+  }
+  .principal {
+    justify-self: center;
+    grid-area: principal;
+  }
+  .header .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 79px 79px;
+    grid-template-areas: "principal"
+                          "menu";
+  }
+  .header a {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header .container {
+    grid-template-rows: 79px 237px;
+  }
+  .header ol {
+    grid-template-columns: 1fr;
+    grid-template-rows: 79px 79px 79px;
+  }
+  .link1{
+    padding: 18px 40px;
+  }
+  .link2{
+    padding: 18px 20px;
+  }
+  .link3 {
+    padding: 18px 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+
+  }
+}
